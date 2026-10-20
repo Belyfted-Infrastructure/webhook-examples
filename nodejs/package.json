@@ -1,0 +1,23 @@
+{
+  "name": "belyfted-webhook-server",
+  "version": "1.0.0",
+  "description": "Secure RSA-signed webhook receiver for Belyfted",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node --test",
+    "generate:keys": "node scripts/generate-dev-keys.js",
+    "sign:example": "node scripts/sign-example.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment configuration (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Private keys (the public verification key may be committed)
+keys/dev-private.pem
+keys/*private*.pem
+*.key
+*.p8
+
+# Logs and coverage
+*.log
+logs/
+coverage/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
